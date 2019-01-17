@@ -1,0 +1,8 @@
+insert into login (user,password) values ('admin',md5('admin'));
+<?php
+	include ("koneksi.php");
+		$coba=mysqli_query($kon, "SELECT * FROM login");
+		$log=mysqli_fetch_assoc($coba);
+		var_dump($log);
+		
+ ?>
